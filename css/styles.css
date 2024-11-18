@@ -1318,9 +1318,10 @@ footer .container {
 footer .container .section h2 {
 
     color: white;
-
-
-
+font-family: almarai;
+font-size: 25x;
+color:#4d6f27;
+font-weight: bold;
 }
 
 footer .container .section p {
@@ -1337,7 +1338,9 @@ footer .container .section a {
     transition: 0.3s;
     position: relative;
 
+
 }
+
 
 footer .container .section a:hover {
     font-size: 19px;
@@ -1357,7 +1360,7 @@ footer .container .section a:hover {
 .latter form input[type="text"],
 .latter form input[type="email"] {
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
     caret-color: #9baf84;
@@ -1412,14 +1415,17 @@ footer .container .section a:hover {
     background-color: #f7f7f7;
     text-align: center;
 }
-@media  (min-width: 768px) {
+
+@media (min-width: 768px) {
     .newsletter-section {
-        display: none; /* إخفاء القسم على الشاشات الصغيرة */
+        display: none;
+        /* إخفاء القسم على الشاشات الصغيرة */
     }
 
 
-    
+
 }
+
 .newsletter-container {
     max-width: 600px;
     margin: 0 auto;
@@ -1459,7 +1465,7 @@ footer .container .section a:hover {
     box-shadow: 0 0 5px rgba(77, 111, 39, 0.5);
 }
 
-.newsletter-form input[type="submit"]{
+.newsletter-form input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #4d6f27;
@@ -1477,35 +1483,33 @@ footer .container .section a:hover {
 }
 
 
-footer .logo-section{
+footer .logo-section {
     display: flex;
     justify-content: center;
     align-content: center;
-  padding-left: 10%;
+    padding-left: 20%;
     margin-bottom: 40px;
-  
-      }
 
-      @media (min-width: 768px) {
-        footer .logo-section {
-            display: none;
-        }
-      }
+}
 
-
-
-/* عند الشاشات الأكبر من 768px (مثل أجهزة الكمبيوتر) */
-@media  (max-width: 769px) {
-    .newsletter-section {
-        display: block; /* يظهر القسم مرة أخرى على الشاشات الأكبر */
-    }
-
-    .latter , .yaser {
+@media (min-width: 768px) {
+    footer .logo-section {
         display: none;
     }
-   
 }
 
 
 
+/* عند الشاشات الأكبر من 768px (مثل أجهزة الكمبيوتر) */
+@media (max-width: 769px) {
+    .newsletter-section {
+        display: block;
+        /* يظهر القسم مرة أخرى على الشاشات الأكبر */
+    }
 
+    .latter,
+    .yaser {
+        display: none;
+    }
+
+}
