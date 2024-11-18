@@ -19,7 +19,7 @@
 body {
     font-family: 'Cairo';
     direction: rtl;
-    height: 4500px;
+
 }
 
 html {
@@ -1210,11 +1210,13 @@ hr {
     cursor: pointer;
 
 }
-.testimonials .container .testimonial:hover{
- transform: translateY(-5px);  
+
+.testimonials .container .testimonial:hover {
+    transform: translateY(-5px);
 
 }
-.testimonials .container .testimonial::before{
+
+.testimonials .container .testimonial::before {
     position: absolute;
     content: "";
     left: 0;
@@ -1222,26 +1224,30 @@ hr {
     width: 3px;
     background-color: #0E592F;
     height: 0;
-transition: 0.3s;
+    transition: 0.3s;
 }
-.testimonials .container .testimonial::after{
+
+.testimonials .container .testimonial::after {
     position: absolute;
     content: "";
     left: 0;
     bottom: 0;
     width: 0;
     background-color: #0E592F;
-    height:3px;
-transition: 0.3s;
+    height: 3px;
+    transition: 0.3s;
 }
-.testimonials .container .testimonial:hover::before{
+
+.testimonials .container .testimonial:hover::before {
     height: 50%;
 
 }
-.testimonials .container .testimonial:hover::after{
+
+.testimonials .container .testimonial:hover::after {
     width: 50%;
 
 }
+
 .testimonials .container .testimonial img {
 
     position: absolute;
@@ -1290,3 +1296,216 @@ transition: 0.3s;
 
 
 /* end testimonials */
+
+/* Start footer section */
+footer {
+    padding: 70px;
+    background-color: rgb(40, 37, 37);
+    background-image: url("../images/footerbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 5px solid var(--main-color);
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+}
+
+footer .container .section h2 {
+
+    color: white;
+
+
+
+}
+
+footer .container .section p {
+    color: white;
+    margin-top: 15px;
+    line-height: 1.8;
+    width: 90%;
+}
+
+footer .container .section a {
+    color: white;
+    display: block;
+    margin-top: 15px;
+    transition: 0.3s;
+    position: relative;
+
+}
+
+footer .container .section a:hover {
+    font-size: 19px;
+    font-weight: bold;
+    color: #4d6f27;
+    padding-right: 5px;
+
+}
+
+.latter form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+.latter form input[type="text"],
+.latter form input[type="email"] {
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    caret-color: #9baf84;
+
+}
+
+.latter form input[type="text"]:focus,
+.latter form input[type="email"]:focus {
+
+    outline: none;
+
+}
+
+.latter form input[type="submit"] {
+    background-color: #4d6f27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.latter form input[type="submit"]:hover {
+    background-color: black;
+}
+
+.footer-hr {
+    width: 70%;
+    margin-top: 35px;
+    transform: translateX(-20%);
+
+
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+
+/* End footer section */
+
+
+
+
+
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+@media  (min-width: 768px) {
+    .newsletter-section {
+        display: none; /* إخفاء القسم على الشاشات الصغيرة */
+    }
+
+
+    
+}
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.newsletter-form p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-form input[type="text"]:focus,
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+    border-color: #4d6f27;
+    box-shadow: 0 0 5px rgba(77, 111, 39, 0.5);
+}
+
+.newsletter-form input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background-color: #4d6f27;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background-color: black;
+}
+
+
+footer .logo-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  padding-left: 10%;
+    margin-bottom: 40px;
+  
+      }
+
+      @media (min-width: 768px) {
+        footer .logo-section {
+            display: none;
+        }
+      }
+
+
+
+/* عند الشاشات الأكبر من 768px (مثل أجهزة الكمبيوتر) */
+@media  (max-width: 769px) {
+    .newsletter-section {
+        display: block; /* يظهر القسم مرة أخرى على الشاشات الأكبر */
+    }
+
+    .latter , .yaser {
+        display: none;
+    }
+   
+}
+
+
+
+
