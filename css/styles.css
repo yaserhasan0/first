@@ -1312,7 +1312,7 @@ footer .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-
+    /* padding-top: -50px; */
 }
 
 footer .container .section h2 {
@@ -1329,6 +1329,8 @@ footer .container .section p {
     margin-top: 15px;
     line-height: 1.8;
     width: 90%;
+    /* padding-left: -50px; */
+   
 }
 
 footer .container .section a {
@@ -1340,7 +1342,21 @@ footer .container .section a {
 
 
 }
+footer .container .section a::after{
 
+content: "\f0d9";
+font-family: "Font Awesome 5 free";
+font-weight: 900;
+position: absolute;
+top: 50%;
+color:#4d6f27;
+font-size: 20px;
+right: -15px;
+transform: translateY(-50%);
+
+
+
+}
 
 footer .container .section a:hover {
     font-size: 19px;
@@ -1512,4 +1528,35 @@ footer .logo-section {
         display: none;
     }
 
+}
+/* //////////////////// */
+
+/* btn-whatsapp */
+.btn-whatsapp{
+position: fixed;
+bottom: 30px;
+left: 30px;
+background-color: #25D366;
+color: white;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+transition: 0.3s;
+box-shadow: 0 0 5px #eee;
+align-items: center;
+
+
+
+}
+.btn-whatsapp:hover{
+    scale: 1.1;
+
+}
+.btn-whatsapp i{
+    font-size: 30px;
+    color: white;
+    font-size: 36px;
+  
 }
