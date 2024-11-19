@@ -1534,8 +1534,8 @@ footer .logo-section {
 /* btn-whatsapp */
 .btn-whatsapp{
 position: fixed;
-bottom: 30px;
-left: 30px;
+bottom: 100px;
+right: 25px;
 background-color: #25D366;
 color: white;
 border-radius: 50%;
@@ -1547,7 +1547,7 @@ transition: 0.3s;
 box-shadow: 0 0 5px #eee;
 align-items: center;
 
-
+z-index: 5;
 
 }
 .btn-whatsapp:hover{
